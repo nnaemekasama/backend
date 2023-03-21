@@ -48,9 +48,6 @@ const admin = (req, res, next) => {
   }
 }
 
-export { protect, admin }
-
-
 router.post('/login', authUser)
 router.route("/profile").get(protect, getUserProfile).put(protect, updateUserProfile)
 router.route('/').post(registerUser).get(protect, admin, getUsers)

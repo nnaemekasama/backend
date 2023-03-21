@@ -46,8 +46,6 @@ const admin = (req, res, next) => {
   }
 }
 
-export { protect, admin }
-
 const router = express.Router()
 
 router.route("/")

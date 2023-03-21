@@ -39,8 +39,6 @@ const protect = AsyncHandler(async (req, res, next) => {
     }
   }
   
-  export { protect, admin }
-
 router.route('/').post(protect, addOrderItems).get(protect, admin, getOrders)
 router.route('/pay').post(protect, updateOrderToPaid)
 router.route('/myorders').get(protect, getMyOrders)
