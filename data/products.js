@@ -71,6 +71,17 @@ const products = [
     rating: 4,
     numReviews: 12,
   },
+  {
+    name: Nintendo Switch,
+    image: '/images/nintendo-switch.jpg',
+    description: 'Enter the world of gaming with the Nintendo Switch - A versatile console that offers both handheld and docked gameplay',
+    brand: 'Nintendo',
+    category: 'Gaming Consoles',
+    price: 299.99,
+    countInStock: 10,
+    rating: 4.7,
+    numReviews: 14
+  }
 ]
 
 export default products
